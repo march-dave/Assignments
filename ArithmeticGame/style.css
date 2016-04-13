@@ -1,8 +1,39 @@
-#number {
+/*#number {
 	font-size: ;
 }
 
 h1 {
 
 
+}*/
+
+button {
+	height: 40px;
+	width: 40px;
+	font-size: 110%;
+}
+
+#display {
+	font-size: 120%;
+	text-align: right;
+}
+
+span {
+	font-size: 150;
+}
+
+.container {
+	display: table;
+	border:1px solid grey;
+	margin: 10px;
+}
+
+.row  {
+	display: table-row;
+	background-color:#ccc;
+}
+
+.left, .right, .middle {
+	display: table-cell;
+	background-color:#EAE8E8;
 }
