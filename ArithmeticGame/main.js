@@ -54,8 +54,6 @@ function btnClicked(event) {
 			case '±':
 				if (calCulatorString.length) {
 					calCulatorString = parseInt(calCulatorString) > 0 ? "-" + calCulatorString : calCulatorString.slice(1);
-
-					// console.log("calCulatorString: " + calCulatorString);
 				}
 				break;
 			case '=':
@@ -63,9 +61,13 @@ function btnClicked(event) {
 				break;
 			case 'Clr':
 					calCulatorString = "";
+					document.getElementById('skipAnswer').textContent = '';
+
 				break;
 			case 'Skip':
 				init();
+
+				document.getElementById('skipAnswer').textContent = totalNumber;
 	
 			default:
 					calCulatorString = calCulatorString + text;
@@ -80,36 +82,6 @@ function btnClicked(event) {
 			} else {
 				document.getElementById('answer').textContent = "Answer is wrong, actuall answer is: " + totalNumber;
 			}
-
-			// array.forEach(function(c, i, a) {
-
-			// 	switch(text) 
-			// 	{
-			// 		case '+':
-			// 			compareNum = compareNum + c;
-			// 			break;
-			// 		case '-':
-
-			// 			break;
-			// 		case '*':
-
-			// 			break;
-			// 		case '/':
-
-			// 			break;
-					
-			// 		default:
-							
-			// 			break;
-			// 	}
-
-			// } );
-
-			// if ( parseInt(totalNumber) === parseInt(compareNum) ) {
-			// 	document.getElementById('answer').textContent = " congratulation!!: " + parseInt(compareNum);
-			// } else {
-			// 	document.getElementById('answer').textContent = "Answer is wrong, actuall answer is: " + totalNumber;
-			// }
 		}
 
 		if ( isNaN(text) && text === 'Clr' ) {
