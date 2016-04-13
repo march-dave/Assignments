@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 var totalNumber = 0;
 var array = [];
-var str = "";
+var calCulatorString = "";
 
 function init(event) {
 	
@@ -52,29 +52,31 @@ function btnClicked(event) {
 		switch(text) 
 		{
 			case '±':
-				if (str.length) {
-					str = parseInt(str) > 0 ? "-" + str : str.slice(1);
+				if (calCulatorString.length) {
+					calCulatorString = parseInt(calCulatorString) > 0 ? "-" + calCulatorString : calCulatorString.slice(1);
 
-					// console.log("str: " + str);
+					// console.log("calCulatorString: " + calCulatorString);
 				}
 				break;
 			case '=':
 
 				break;
 			case 'Clr':
-					str = "";
+					calCulatorString = "";
 				break;
+			case 'Skip':
+				init();
 	
 			default:
-					str = str + text;
+					calCulatorString = calCulatorString + text;
 					// array.push(text);
 				break;
 		}
 
 		if ( isNaN(text) && text === '=' ) {
 
-			if ( parseInt(totalNumber) === parseInt(str) ) {
-				document.getElementById('answer').textContent = " congratulation!!: " + parseInt(str);
+			if ( parseInt(totalNumber) === parseInt(calCulatorString) ) {
+				document.getElementById('answer').textContent = " congratulation!!: " + parseInt(calCulatorString);
 			} else {
 				document.getElementById('answer').textContent = "Answer is wrong, actuall answer is: " + totalNumber;
 			}
