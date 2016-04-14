@@ -1,0 +1,42 @@
+body {
+
+
+}
+
+/*.container {
+	display: table;
+	border:1px solid grey;
+	margin: 10px;
+}
+
+.row  {
+	display: table-row;
+	background-color:#ccc;
+}
+
+.left, .right, .middle {
+	display: table-cell;
+	background-color:#EAE8E8;
+	width: 250px;
+	height: 250px;
+}*/
+
+.shell  {
+	display: inline-block;
+	background-color: yellow;
+	/*position: relative;*/
+	margin: auto;
+	height: 300px;
+	width: 300px;
+}
+
+.left, .right, .middle {
+/*	display: table-cell;
+	background-color:#EAE8E8;
+	width: 250px;
+	height: 250px;
+*/
+	position: relative;
+}
+
+
