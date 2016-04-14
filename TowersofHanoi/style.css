@@ -21,22 +21,84 @@ body {
 	height: 250px;
 }*/
 
+/*#board {
+	width: auto;
+	height: 500px;
+	margin-left: 15%;
+}*/
+
 .shell  {
 	display: inline-block;
-	background-color: yellow;
-	/*position: relative;*/
+	background-color: #EAE8E8;
 	margin: auto;
 	height: 300px;
 	width: 300px;
+	position: relative;
 }
 
-.left, .right, .middle {
+.towerBase {
+
+	height: auto;
+	width: 250px;
+	position: absolute;
+	bottom: 0;
+}
+
+#one {
+	width: 120px;
+}
+
+#two {
+	width: 160px;
+}
+
+#three {
+	width: 200px;
+}
+
+.block {
+	width: 40px;
+	height: 40px;
+	background-color: green;
+	border: 1px solid black;
+}
+
+#left {
 /*	display: table-cell;
 	background-color:#EAE8E8;
 	width: 250px;
 	height: 250px;
 */
-	position: relative;
+	/*background-color: #5A6F28;*/
+	text-align: -webkit-center;
+}
+
+#right {
+/*	display: table-cell;
+	background-color:#EAE8E8;
+	width: 250px;
+	height: 250px;
+*/
+	/*position: relative;*/
+	/*background-color: #CCC;*/
+}
+
+#middle {
+/*	display: table-cell;
+	background-color:#EAE8E8;
+	width: 250px;
+	height: 250px;
+*/
+	/*position: relative;*/
+	/*background-color: green;*/
+}
+
+/*.one {
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
 }
 
 
+
+*/
