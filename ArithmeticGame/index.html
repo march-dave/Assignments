@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div id='clockdiv'></div>
+
 <div class="container">
 	<div class="row">
 		<div class="left"><div id='firstNumber'></div></div>
@@ -39,7 +41,7 @@
 			</div>
 			<div class="row">
 				<button>0</button>
-				<button>Clr</button>
+				<button>clr</button>
 				<button>±</button>
 			</div>
 			<div class="row">
@@ -53,11 +55,9 @@
 	</div>
 
 	<button style="width: 50px">Skip</button>
-	<div>Answer is: <p id="skipAnswer" style="display:inline-block"></p></div>
+	<div id="skipAnswer" style="display: none;">Answer is: <p id="skipAnswerValue" style="display:inline-block;"></p></div>
 
 </div>
-
-<!-- If answer is worng, show the actually answer. -->
 
 </body>
 </html>
